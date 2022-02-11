@@ -1,0 +1,77 @@
+body{
+    background-color: steelblue;
+    text-align: center;
+    font-family: "arial";
+    color: white;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+input{
+    width: 450px;
+    height: 50px;
+    margin: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+}
+.boton-agregar{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(255, 6, 46) ;
+    color: white;
+}
+.boton-agregar:hover{
+    opacity: 0,9;
+}
+.boton-editar{
+    width: 70px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: none ;
+    color: #62d0ff;
+    /* font-size: 1.4rem; */
+    font-size: 1rem;
+    /* font-family: "Montserrat, sans-serif"; */
+    font-family: "Arial";
+}
+.boton-remover{
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(255, 6, 46) ;
+    color: white;
+    font-size: 20px;
+}
+
+.item-input{
+    width:  350px;
+    height: 50px;
+    margin: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid white 1px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    background: none;
+}
