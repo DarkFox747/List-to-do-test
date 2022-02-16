@@ -36,10 +36,10 @@ class items {
     input.classList.add("item-input");
     input.setAttribute("value", this.nuevaTarea);
     input.disabled = true
-    botonEdi.classList.add("boton-editar");
-    botonEdi.innerHTML = "Editar";
+    botonEdi.classList.add("boton-editar","cerrado");
+    botonEdi.innerHTML =`<i class="fa-solid fa-lock"></i>`;
     botonEli.classList.add("boton-remover");
-    botonEli.innerHTML = "X";
+    botonEli.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
     documentFragment.appendChild(div)
     div.appendChild(input)
     div.appendChild(botonEdi)
@@ -47,15 +47,15 @@ class items {
     container.appendChild(documentFragment)
 
     botonEdi.addEventListener("click",function(){
-        if (botonEdi.innerText == "Editar"){
-            botonEdi.innerHTML = "Guardar"
-            input.disabled = false
-            console.log ("cambiar 1")
+        if (this.classList.contains("cerrado")==true ){
+            botonEdi.innerHTML = `<i class="fa-solid fa-lock-open"></i>`
+            botonEdi.classList.remove("cerrado")
+            input.disabled = false            
         }
         else{
-            botonEdi.innerHTML = "Editar"
+            botonEdi.innerHTML = `<i class="fa-solid fa-lock"></i>`
             input.disabled = true
-            console.log ("cambiar 2")
+            botonEdi.classList.add("cerrado")
         }
         })
     botonEli.addEventListener("click",function(){
